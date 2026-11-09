@@ -37,7 +37,7 @@ docker run --rm -e AIGIFMAKER_API_KEY san8888/aigifmaker -status <id>           
 docker run --rm -e AIGIFMAKER_API_KEY san8888/aigifmaker credits                                       # credits left, free to call
 ```
 
-A run waits up to 5 minutes by default, polling every 3 seconds; change that with `-timeout 10m`. On an account that has not bought credits yet, a GIF can wait in a queue first (`"queued":true` with `queueEta` in seconds); the CLI keeps polling through it.
+A run waits up to 15 minutes by default, polling every 3 seconds; change that with `-timeout 10m`. On an account that has not bought credits yet, a GIF can wait in a queue first (`"queued":true` with `queueEta` in seconds); the CLI keeps polling through it.
 
 ## Errors
 

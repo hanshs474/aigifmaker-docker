@@ -189,7 +189,7 @@ func run(args []string, key string, stdout, stderr io.Writer) int {
 	noWait := fs.Bool("no-wait", false, "print the task id and exit without waiting")
 	statusID := fs.String("status", "", "print the status of a task id as JSON")
 	showCredits := fs.Bool("credits", false, "print the credits left (free)")
-	timeout := fs.Duration("timeout", 5*time.Minute, "how long to wait for the GIF")
+	timeout := fs.Duration("timeout", 15*time.Minute, "how long to wait for the GIF")
 	showVersion := fs.Bool("version", false, "print the version")
 	fs.Usage = func() {
 		fmt.Fprintf(stderr, "usage: aigifmaker [flags] \"prompt\"\n       aigifmaker credits\n\nTurns text into an animated GIF on https://aigifmaker.ai and prints the GIF URL.\nNeeds AIGIFMAKER_API_KEY (%s).\n\n", keysURL)
